@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+header{
+    font-family: "Poppins",sans-serif;
+    height: fit-content;
+    margin:20px auto;
+    width: 90%;
+    background-color: grey;
+    border-radius: 20px;
+}
+
+header #head{
+    text-align: center;
+    margin:auto;
+    color: white;
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+.quiz-container{
+    width:95%;
+    margin:auto;
+   
+   
+   
+}
+
+.option-container{
+    background-color: rgb(245, 239, 239);
+    padding:20px;
+    border-radius: 20px;
+    width:75%;
+    margin:20px auto;
+}
+
+.option{
+    /* width:75%; */
+    height:40px;
+    background-color: white;
+    margin:20px auto;
+    padding:5px 10px;
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.option:hover{
+    background-color: rgb(235, 229, 229);
+    border:2px solid black;
+}
+
+#question{
+    margin-left:12.5%;
+    font-weight: 900;
+    font-size: 1.5rem;
+    font-family: "Poppins",sans-serif;
+}
+
+.check-score{
+   width:fit-content;  
+   /* margin proper work with width property */
+   margin:40px auto;
+
+}
+
+#btn{
+    cursor: pointer;
+    border:1px solid green;
+    height:40px;
+    width:150px;
+    font-family: "Poppins",sans-serif;
+    font-weight: 900;
+    font-size: 18px;
+    border-radius: 10px;
+    color:white;
+    background:linear-gradient(90deg,rgb(69, 254, 186),rgb(0, 128, 49),rgb(0, 221, 255));
+}
+
+#btn:hover{
+    border:3px solid rgb(225, 189, 28);
+    background: green;
+    transition:ease-in-out 0.1s;
+
+}
+
+.score{
+    display: flex;
+    border:1px solid black;
+    border-radius: 20px;
+    height:100px;
+    width:300px;
+    margin:40px auto;
+    background: linear-gradient(180deg,rgb(250, 246, 246),grey);
+    align-items: center;
+    justify-content: center;
+    padding:10px;
+}
+
+#score{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+@media screen and (max-width:650px) {
+    header #head{
+        font-size: 1.5rem;
+    }
+
+    header{
+        height:50px;
+    }
+
+    .option-container{
+        width:90%;
+    }
+
+    #question{
+        margin-left: 5%;
+        font-size: 1.3rem;
+    }
+
+    .score{
+        width:80%;
+        
+    }
+
+    .option{
+        height:fit-content;
+    }
+}
+
+
+@media screen and (max-width:540px) {
+    header #head{
+        font-size: 1.3rem;
+        margin:auto 20px;
+    }
+
+    header{
+        height:fit-content;
+        padding:10px;
+    }
+
+    .option-container{
+        width:95%;
+    }
+
+    #question{
+        margin-left: 2.5%;
+        font-size: 1.1rem;
+    }
+
+    .score{
+        width:80%;
+        
+    }
+
+   
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUIZE</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <!-- <script src="./script.js" defer></script> -->
+</head>
+
+<body>
+    <header>
+        <h1 id="head">C programming Quize for bigginers</h1>
+    </header>
+    <!-- this is the main container  -->
+    <div class="quiz-container" id="question1">
+        <p id="question">2. What is a correct syntax to output "Hello world in C</p>
+     
+        <div class="option-container">
+            <div class="option">A. cout&gt;&gt;"Hellow World"; </div>
+            <div class="option">B. printf("Hello World"); </div>
+            <div class="option">C. console.writeLine("Hello World"); </div>
+            <div class="option">D. system.out.printline("Hellow World");</div>
+        </div>
+        <p id="question">2. How do you insert comment in C code</p>
+        <div class="option-container" id="question2">
+        <div class="option">A. # This is a comment </div>
+        <div class="option">B. * This is a comment</div>
+        <div class="option">C. // This is a comment</div>
+        <div class="option">D. --This is a comment</div>
+        </div>
+    </div>
+
+    <div class="check-score">
+        <input type="button" value="Check Score" id="btn" onclick="calculateScore()">
+    </div>
+
+    <div class="score">
+        <span id="score"><p id="myscore">Your Score:<span id="totalScore">0</span></p></p></span>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
